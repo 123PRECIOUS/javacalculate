@@ -1,0 +1,66 @@
+html, 
+body {
+    background-image: url(bbb.jpg);
+    background-size: cover;
+      background-position: cover;
+    text-align: center;
+  }
+  h1 {
+      color: rgb(228, 47, 47);
+    font-weight: bold;
+    font-size:2em;
+    text-shadow: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  #calculator { 
+      background-color: gray;
+      width: 250px;
+      height: 290px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 3px 6px #ccc;
+      text-align: center;
+            
+  }
+
+  #txt1 {
+      margin-bottom: 4px;
+      height: 35px;
+      width: 10em;
+      border: 1px solid rgb(121, 110, 110);
+      box-shadow: 0px 0px 1px 1px rgb(122, 112, 112);
+      text-align: right;
+      font: 20px bold;
+      
+  }
+
+  #keys {
+    width: 41px;
+    height: 35px;
+    margin: 4px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius:2px;
+    outline: none;
+  }
+
+  #equal {
+    width: 96px;
+    height: 35px;
+    margin: 4px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius:2px;
+    outline: none;
+  }
+
+  #keysC {
+      width: 58px;
+      height: 35px;
+      margin: 5px;
+      border-radius: 2px;
+  }
+
+  h3 {
+    color: white
+  }

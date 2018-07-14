@@ -1,0 +1,71 @@
+<!doctype html>
+<head> 
+        <title> Java Script Calculator</title>
+        <meta charset="utf-8" />
+        <meta name="description" content:"JavaScript Calculator" />
+        <link rel="stylesheet" href="java.css">
+        <script type="text/javascript">
+            function addtoScreen(n1)
+            {
+                calc.txt1.value=calc.txt1.value+n1;
+                if(n1==='c'){
+                    calc.txt1.value='';
+                }
+            }
+
+            function answer(){
+                n1=calc.txt1.value
+                n1=eval(n1);
+                calc.txt1.value=n1;
+            }
+
+            function backspace(){
+                var number =  calc.txt1.value;
+  
+  var len = number.length - 1;
+  
+  var newNumber = number.substring( 0, len );
+  
+  calc.txt1.value = newNumber;
+}
+
+
+                   </script>
+    
+</head>
+<h1> Success  Calculator </h1>
+<body>
+    
+    <div id='calculator'>
+        <form name=calc>
+                <input type="text" id=txt1 disabled>
+                <br>
+                <input type="button" value="C" id="keysC" onclick='addtoScreen("c")'>
+                <input type="button" value="Del" id="keysC" onclick='backspace()'>
+               
+                <input type="button" value="+" id="keysC" onclick='addtoScreen("+")'>
+                <br>
+                <input type="button" value="9" id="keys" onclick='addtoScreen("9")'>
+                <input type="button" value="8" id="keys" onclick='addtoScreen("8")'>
+                <input type="button" value="7" id="keys" onclick='addtoScreen("7")'>
+                <input type="button" value="-" id="keys" onclick='addtoScreen("-")'>
+                <br>
+                <input type="button" value="6" id="keys" onclick='addtoScreen("6")'>
+                <input type="button" value="5" id="keys" onclick='addtoScreen("5")'>
+                <input type="button" value="4" id="keys" onclick='addtoScreen("4")'>
+                <input type="button" value="*" id="keys" onclick='addtoScreen("*")'>
+                <br>
+                <input type="button" value="3" id="keys" onclick='addtoScreen("3")'>
+                <input type="button" value="2" id="keys" onclick='addtoScreen("2")'>
+                <input type="button" value="1" id="keys" onclick='addtoScreen("1")'>
+                <input type="button" value="/" id="keys" onclick='addtoScreen("/")'>
+                <br>
+                <input type="button" value="0" id="keys" onclick='addtoScreen("0")'>
+                <input type="button" value="." id="keys" onclick='addtoScreen(".")'>
+                <input type="button" value="=" id="equal" onclick='answer()'>
+
+              
+        </form>
+        <h3> E. Calculator</h3>
+    </div>
+</body>
